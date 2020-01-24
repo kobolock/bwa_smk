@@ -9,7 +9,7 @@ rule alignement:
         bam="output/{sample}.sam"
     params:
         name="alignement_{sample}",
-        nthread=5,
+        nthread=4,
         reference="/data2/fdb/igenomes/Homo_sapiens/UCSC/hg19/Sequence/BWAIndex/genome.fa"
     conda:
         "./env/bwa_mem.yaml"
